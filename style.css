@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+@keyframes coloriro {
+    0% {
+        color: red;
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: blue;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@keyframes start {
+    0% {
+        top: 40%;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 40%;
+    }
+}
+
+@keyframes pulo {
+    0% {
+        margin-bottom: 0;
+    }
+    50% {
+        margin-bottom: 175px;
+    }
+    100% {
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes movimento {
+    0% {
+        right: -10%;
+    }
+    25% {
+        right: 10%;
+    }
+    50% {
+        right: 10%;
+    }
+    75% {
+        right: 40%;
+    }
+    100% {
+        right: 110%;
+    }
+}
+
+body {
+    background-image: none;
+    font-family: 'Pixelify Sans', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    background-color: rgb(41, 194, 41);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+main {
+    background: linear-gradient(0deg, rgba(185,254,255,0.9444152661064426) 0%, rgba(0,170,252,0.9304096638655462) 100%);
+    height: 580px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+#inicio {
+    position: fixed;
+    width: 10rem;
+    height: 5rem;
+    left: 45%;
+    top: 40%;
+    transition: 1s;
+    cursor: pointer;
+    animation: start 2s infinite;
+}
+
+#inicio:hover {
+    left: 44%;
+    height: 7rem;
+    width: 12rem;
+}
+
+#mario {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+#cano {
+    position: absolute;
+    right: -10%;
+    width: 100px;
+    height: 80px;
+}
+
+#placar {
+    border: 3px solid yellow;
+    padding: 20px 20px 20px 20px;
+    background-color: black;
+    color: white;
+}
+
+#tempo {
+    border: 3px solid yellow;
+    background-color: black;
+    padding: 20px 20px 20px 20px;
+    color: white;
+}
+
+footer {
+    background: linear-gradient(90deg, rgba(0,25,1,1) 0%, rgba(23,208,44,1) 40%, rgb(0, 255, 64) 100%);
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+span {
+    font-size: 35px;
+    margin-left: 15px;
+    animation: coloriro 1s infinite;
+}
+
+.chao {
+    color: red;
+    height: 30px;
+}
